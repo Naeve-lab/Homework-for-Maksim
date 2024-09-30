@@ -6,21 +6,21 @@ class Program
 {
     static void Main(string[] args)
     {
-        
-        Dictionary<string, int> slov = new Dictionary<string, int> 
+
+        Dictionary<string, int> slov = new Dictionary<string, int>
         {
             { "Андрей",7900 },
         };
         var f = true;
         while (f)
         {
-            Console.WriteLine("Выберите Добавить запись,Найти номер по имени,Вывести все записи,Выход");
+            Console.WriteLine("Выберите 1(Добавить запись),2(Найти номер по имени),3(Вывести все записи),4(Выход)");
             int input = Convert.ToInt32(Console.ReadLine());
-            
+
             switch (input)
             {
                 case 1:
-                    slov.Add(Console.ReadLine(),Convert.ToInt32(Console.ReadLine()));
+                    slov.Add(Console.ReadLine(), Convert.ToInt32(Console.ReadLine()));
                     continue;
                 case 2:
                     string name = Console.ReadLine();
